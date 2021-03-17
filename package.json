@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "postcss ./src/css/style.css -o ./dist/css/main.css",
+    "prod": "NODE_ENV=production postcss ./src/css/style.css -o ./dist/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "install": "^0.13.0",
     "npm": "^7.6.2",
     "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.3"
   }
 }
